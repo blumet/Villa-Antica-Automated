@@ -1,0 +1,81 @@
+room_number,room_type,floor,status,max_occupancy,view,features,rate_base_eur
+101,standard,1,clean,2,garden,king bed; bathtub; sofa,120
+102,standard,1,occupied,2,garden,kitchenette; sofa; balcony,120
+103,standard,1,clean,2,garden,balcony,120
+104,standard,1,occupied,2,garden,bathtub; sofa; twin beds,120
+105,standard,1,occupied,2,courtyard,bathtub,120
+106,standard,1,clean,2,courtyard,bathtub; kitchenette,120
+107,standard,1,maintenance,2,courtyard,balcony,120
+108,standard,1,occupied,2,courtyard,sofa; king bed,120
+109,standard,1,dirty,2,sea,balcony; twin beds; kitchenette,120
+110,standard,1,clean,2,courtyard,bathtub; balcony; sofa,120
+111,standard,1,clean,2,courtyard,bathtub,120
+112,standard,1,dirty,2,sea,twin beds; king bed,120
+113,standard,1,occupied,2,courtyard,kitchenette,120
+114,standard,1,occupied,2,garden,kitchenette; bathtub; sofa,120
+115,standard,1,occupied,2,sea,kitchenette; sofa,120
+116,standard,1,occupied,2,courtyard,bathtub,120
+117,standard,2,dirty,2,courtyard,king bed; balcony,120
+118,standard,2,occupied,2,courtyard,kitchenette,120
+119,standard,2,occupied,2,sea,king bed,120
+120,standard,2,occupied,2,courtyard,sofa; twin beds; kitchenette,120
+121,standard,2,occupied,2,street,twin beds; balcony; sofa,120
+122,standard,2,dirty,2,street,bathtub; twin beds; balcony,120
+123,standard,2,occupied,2,sea,king bed; sofa; balcony,120
+124,standard,2,clean,2,garden,sofa; king bed; kitchenette,120
+125,standard,2,occupied,2,sea,twin beds,120
+126,standard,2,occupied,2,courtyard,bathtub; sofa; balcony,120
+127,standard,2,dirty,2,courtyard,sofa; kitchenette; bathtub,120
+128,standard,2,occupied,2,street,sofa; balcony; king bed,120
+129,standard,2,occupied,2,garden,king bed; bathtub,120
+130,standard,2,occupied,2,garden,kitchenette,120
+131,standard,2,occupied,2,garden,bathtub; kitchenette; twin beds,120
+132,standard,2,dirty,2,street,sofa; kitchenette,120
+133,superior,3,occupied,2,street,kitchenette; bathtub; king bed,155
+134,superior,3,occupied,2,courtyard,sofa; twin beds,155
+135,superior,3,occupied,2,street,king bed,155
+136,superior,3,occupied,2,street,bathtub; balcony; sofa,155
+137,superior,3,clean,2,garden,balcony,155
+138,superior,3,dirty,2,courtyard,sofa,155
+139,superior,3,occupied,2,sea,sofa,155
+140,superior,3,occupied,2,sea,twin beds,155
+141,superior,3,dirty,2,street,balcony,155
+142,superior,3,clean,2,courtyard,twin beds; kitchenette,155
+143,superior,3,dirty,2,garden,kitchenette; balcony; sofa,155
+144,superior,3,occupied,2,courtyard,bathtub,155
+145,superior,4,occupied,2,sea,twin beds,155
+146,superior,4,occupied,2,sea,balcony,155
+147,superior,4,occupied,2,garden,kitchenette,155
+148,superior,4,maintenance,2,garden,bathtub,155
+149,superior,4,occupied,2,sea,bathtub; twin beds,155
+150,superior,4,dirty,2,street,balcony; twin beds,155
+151,superior,4,occupied,2,sea,twin beds; sofa,155
+152,superior,4,clean,2,sea,bathtub,155
+153,superior,4,occupied,2,garden,kitchenette; sofa; balcony,155
+154,superior,4,clean,2,garden,sofa,155
+155,superior,4,occupied,2,street,sofa,155
+156,superior,4,occupied,2,street,sofa,155
+157,deluxe,5,occupied,2,street,balcony; sofa,195
+158,deluxe,5,occupied,2,garden,balcony; twin beds; king bed,195
+159,deluxe,5,dirty,2,street,kitchenette; king bed; bathtub,195
+160,deluxe,5,occupied,2,street,kitchenette; king bed; twin beds,195
+161,deluxe,5,occupied,2,garden,twin beds,195
+162,deluxe,5,clean,2,garden,sofa,195
+163,deluxe,5,occupied,2,courtyard,king bed,195
+164,deluxe,5,dirty,2,street,king bed; bathtub,195
+165,deluxe,6,occupied,2,courtyard,kitchenette; sofa; balcony,195
+166,deluxe,6,clean,2,courtyard,balcony; bathtub; king bed,195
+167,deluxe,6,occupied,2,garden,sofa; bathtub; king bed,195
+168,deluxe,6,occupied,2,street,king bed; bathtub; kitchenette,195
+169,deluxe,6,clean,2,courtyard,balcony,195
+170,deluxe,6,clean,2,courtyard,balcony,195
+171,deluxe,6,occupied,2,street,king bed; bathtub; twin beds,195
+172,deluxe,6,clean,2,sea,balcony; kitchenette; sofa,195
+173,suite,7,dirty,4,street,balcony; king bed; bathtub,280
+174,suite,7,occupied,4,garden,king bed; balcony,280
+175,suite,7,dirty,4,street,bathtub; balcony; king bed,280
+176,suite,7,dirty,4,sea,kitchenette; bathtub; sofa,280
+177,suite,7,dirty,4,street,balcony; bathtub,280
+178,suite,7,clean,4,courtyard,kitchenette; bathtub,280
+179,suite,7,occupied,4,garden,balcony; twin beds,280
+180,suite,7,occupied,4,sea,king bed; bathtub,280

@@ -1,0 +1,16 @@
+item_id,item_name,category,par_level,current_stock,unit,last_updated,alert
+FB001,Breakfast covers forecast,operations,65,58,covers,2026-06-14 06:00,OK
+FB002,Coffee beans (kg),beverage,5,3.2,kg,2026-06-14 06:00,OK
+FB003,Orange juice (L),beverage,40,12,liters,2026-06-14 06:00,YES
+FB004,Eggs (units),food,300,180,units,2026-06-14 06:00,OK
+FB005,Bread rolls,food,120,45,units,2026-06-14 06:00,YES
+FB006,Smoked salmon (kg),food,4,1.1,kg,2026-06-14 06:00,YES
+FB007,Champagne (bottles),beverage,24,6,bottles,2026-06-14 06:00,YES
+FB008,Still water (bottles),beverage,200,88,bottles,2026-06-14 06:00,WARN
+FB009,Sparkling water (bottles),beverage,150,42,bottles,2026-06-14 06:00,YES
+FB010,Minibar beer (units),minibar,160,52,units,2026-06-14 06:00,YES
+FB011,Minibar snacks (units),minibar,200,73,units,2026-06-14 06:00,YES
+FB012,Restaurant covers forecast,operations,45,45,covers,2026-06-14 06:00,OK
+FB013,Wine (bottles),beverage,60,28,bottles,2026-06-14 06:00,WARN
+FB014,Allergen-free bread,food,20,3,units,2026-06-14 06:00,YES
+FB015,Vegetarian main portions,food,15,14,units,2026-06-14 06:00,OK

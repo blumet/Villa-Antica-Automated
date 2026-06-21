@@ -1,0 +1,201 @@
+guest_id,first_name,last_name,email,phone,loyalty_tier,visit_count,last_stay,preferences,notes
+G0001,Maria,Dubois,guest1@example.com,+49 891 5682940,none,1,2025-05-21,hypoallergenic bedding; early check-in,business traveler
+G0002,Maria,Rossi,guest2@example.com,+49 211 8290770,none,1,2025-05-27,sea view; early check-in,
+G0003,John,Müller,guest3@example.com,+49 632 4305700,silver,5,2025-05-08,late checkout,business traveler
+G0004,Robert,Williams,guest4@example.com,+49 434 7751158,silver,3,2025-07-17,high floor; quiet room,celebrating birthday
+G0005,Patrick,Müller,guest5@example.com,+49 411 5813613,gold,11,2025-10-12,sea view,prefers minimal contact
+G0006,Emma,Becker,guest6@example.com,+49 774 2422633,silver,4,2025-07-29,sea view; late checkout,allergic to feathers
+G0007,Anna,Rossi,guest7@example.com,+49 350 8971465,gold,10,2024-08-28,,prefers minimal contact
+G0008,David,García,guest8@example.com,+49 771 1093026,silver,6,2026-01-26,quiet room,
+G0009,James,Schneider,guest9@example.com,+49 236 8795419,vip,23,2024-07-01,hypoallergenic bedding; sea view,prefers minimal contact
+G0010,Ahmed,Schneider,guest10@example.com,+49 365 5147994,silver,6,2024-08-01,hypoallergenic bedding,prefers minimal contact
+G0011,Pierre,Weber,guest11@example.com,+49 340 5558623,gold,14,2025-06-06,hypoallergenic bedding,
+G0012,Elena,Ferrari,guest12@example.com,+49 165 7960328,none,1,2025-03-24,hypoallergenic bedding,prefers minimal contact
+G0013,Isabelle,Müller,guest13@example.com,+49 977 7381734,silver,4,2025-01-12,,business traveler
+G0014,Emma,Taylor,guest14@example.com,+49 919 4700025,none,2,2025-01-01,,anniversary stay
+G0015,Fatima,Bernard,guest15@example.com,+49 841 3768991,silver,3,2025-01-22,,
+G0016,Laura,Becker,guest16@example.com,+49 151 5364698,silver,3,2025-04-22,quiet room,prefers minimal contact
+G0017,John,López,guest17@example.com,+49 954 2374158,none,2,2025-01-19,,
+G0018,Anna,Johnson,guest18@example.com,+49 304 1341919,none,1,2024-08-17,,allergic to feathers
+G0019,Pierre,López,guest19@example.com,+49 885 7189034,none,2,2025-11-25,late checkout; high floor,anniversary stay
+G0020,Pierre,Ferrari,guest20@example.com,+49 177 5074336,none,1,2026-01-31,twin beds; late checkout,
+G0021,Yuki,Tanaka,guest21@example.com,+49 112 8047416,none,2,2024-12-30,,celebrating birthday
+G0022,Emma,Gomez,guest22@example.com,+49 766 5531230,none,2,2024-08-23,king bed; hypoallergenic bedding,celebrating birthday
+G0023,Maria,Schneider,guest23@example.com,+49 349 8796514,vip,18,2024-10-09,early check-in; sea view,
+G0024,Michael,López,guest24@example.com,+49 448 5691890,silver,4,2024-09-12,twin beds; extra pillows,allergic to feathers
+G0025,David,Martin,guest25@example.com,+49 761 9234615,none,1,2025-02-11,,
+G0026,Fatima,Nguyen,guest26@example.com,+49 477 8939993,none,1,2024-10-26,sea view; early check-in,business traveler
+G0027,David,Smith,guest27@example.com,+49 838 4231028,none,2,2025-06-26,,
+G0028,Isabelle,Gomez,guest28@example.com,+49 711 5747930,none,1,2026-02-02,,anniversary stay
+G0029,Pierre,Taylor,guest29@example.com,+49 229 5602180,none,2,2026-03-30,,anniversary stay
+G0030,Isabelle,Weber,guest30@example.com,+49 580 9031491,gold,8,2025-02-18,high floor,
+G0031,Ahmed,Dubois,guest31@example.com,+49 690 1899411,none,2,2025-12-11,,anniversary stay
+G0032,John,Hoffmann,guest32@example.com,+49 710 4786401,none,1,2024-11-26,king bed,prefers minimal contact
+G0033,Emma,Smith,guest33@example.com,+49 881 4486102,none,2,2024-08-13,,anniversary stay
+G0034,Patrick,Dubois,guest34@example.com,+49 260 1044891,gold,10,2025-03-23,king bed,anniversary stay
+G0035,Laura,Dubois,guest35@example.com,+49 803 4916201,none,1,2025-08-18,quiet room; early check-in,
+G0036,Sophie,Rossi,guest36@example.com,+49 269 6160869,silver,4,2024-09-13,twin beds; king bed,
+G0037,Patrick,Martin,guest37@example.com,+49 548 2349590,silver,6,2024-09-10,,celebrating birthday
+G0038,David,Nguyen,guest38@example.com,+49 701 1348050,gold,7,2024-06-26,extra pillows,
+G0039,John,Martin,guest39@example.com,+49 193 8885465,silver,5,2025-05-24,sea view,business traveler
+G0040,Pierre,Martin,guest40@example.com,+49 395 7718473,gold,12,2024-10-29,,prefers minimal contact
+G0041,Sara,Gomez,guest41@example.com,+49 944 1019311,none,2,2024-07-11,king bed; early check-in,
+G0042,Marco,Ferrari,guest42@example.com,+49 373 3198037,none,2,2025-07-25,king bed,
+G0043,Anna,Taylor,guest43@example.com,+49 517 2563790,none,1,2025-09-27,,prefers minimal contact
+G0044,Pierre,López,guest44@example.com,+49 525 9094999,none,1,2025-01-17,,prefers minimal contact
+G0045,Nina,García,guest45@example.com,+49 984 2171218,silver,6,2025-08-06,sea view,anniversary stay
+G0046,Isabelle,Martin,guest46@example.com,+49 986 3493017,vip,34,2025-02-12,king bed; sea view,business traveler
+G0047,Pierre,Johnson,guest47@example.com,+49 685 7425184,silver,6,2025-09-18,extra pillows,business traveler
+G0048,Yuki,García,guest48@example.com,+49 607 1621086,gold,13,2026-01-06,sea view; late checkout,prefers minimal contact
+G0049,Yuki,García,guest49@example.com,+49 176 8876745,none,2,2025-08-17,early check-in,
+G0050,Pierre,Martin,guest50@example.com,+49 993 1602286,vip,36,2024-08-21,,allergic to feathers
+G0051,James,Smith,guest51@example.com,+49 554 3791137,gold,8,2025-07-13,,
+G0052,John,García,guest52@example.com,+49 350 9911492,none,1,2025-03-20,high floor; hypoallergenic bedding,
+G0053,Elena,Johnson,guest53@example.com,+49 572 5261032,none,2,2025-01-30,extra pillows,prefers minimal contact
+G0054,Isabelle,Weber,guest54@example.com,+49 754 8118722,none,1,2025-09-01,twin beds,allergic to feathers
+G0055,Isabelle,Ahmed,guest55@example.com,+49 688 5963914,silver,3,2025-07-17,,celebrating birthday
+G0056,David,Hoffmann,guest56@example.com,+49 921 6910964,none,1,2025-10-03,quiet room; twin beds,
+G0057,Marco,Nguyen,guest57@example.com,+49 473 3204724,gold,11,2026-02-12,sea view,celebrating birthday
+G0058,Nina,Gomez,guest58@example.com,+49 379 3760597,none,1,2025-08-25,twin beds,business traveler
+G0059,David,Bernard,guest59@example.com,+49 966 7136687,vip,20,2026-02-12,extra pillows,anniversary stay
+G0060,Emma,López,guest60@example.com,+49 698 7392547,silver,6,2024-07-31,late checkout,allergic to feathers
+G0061,Sophie,Schneider,guest61@example.com,+49 817 6069909,silver,5,2024-07-20,late checkout,
+G0062,James,Johnson,guest62@example.com,+49 650 3276065,none,1,2025-04-13,sea view,celebrating birthday
+G0063,Carlos,Williams,guest63@example.com,+49 386 1548888,silver,6,2025-05-01,,prefers minimal contact
+G0064,Michael,Taylor,guest64@example.com,+49 760 7017548,silver,5,2026-03-14,twin beds,allergic to feathers
+G0065,Yuki,Hoffmann,guest65@example.com,+49 121 1848566,none,2,2025-06-08,,
+G0066,Isabelle,Ferrari,guest66@example.com,+49 932 4909069,vip,22,2025-06-13,,
+G0067,Thomas,Smith,guest67@example.com,+49 776 1432519,none,1,2026-01-01,,business traveler
+G0068,Maria,Rossi,guest68@example.com,+49 229 8062546,vip,21,2024-11-23,,
+G0069,James,Schneider,guest69@example.com,+49 615 4716988,silver,5,2024-08-24,,anniversary stay
+G0070,John,Smith,guest70@example.com,+49 602 8441741,silver,3,2026-03-01,,business traveler
+G0071,Carlos,Nguyen,guest71@example.com,+49 661 6455706,silver,3,2025-04-20,hypoallergenic bedding; twin beds,prefers minimal contact
+G0072,Yuki,Taylor,guest72@example.com,+49 838 4607488,silver,3,2025-03-01,quiet room,celebrating birthday
+G0073,James,Tanaka,guest73@example.com,+49 537 6243275,none,2,2024-07-03,sea view,
+G0074,Sophie,Williams,guest74@example.com,+49 198 7251976,gold,8,2026-01-02,extra pillows; sea view,
+G0075,Carlos,Weber,guest75@example.com,+49 460 2738129,silver,6,2024-10-01,quiet room; high floor,prefers minimal contact
+G0076,James,López,guest76@example.com,+49 687 4794319,none,1,2025-03-02,hypoallergenic bedding; extra pillows,anniversary stay
+G0077,Michael,Müller,guest77@example.com,+49 285 3403361,none,1,2024-10-13,early check-in; late checkout,
+G0078,Sara,Williams,guest78@example.com,+49 564 6719285,gold,15,2025-12-05,twin beds,business traveler
+G0079,Carlos,Rossi,guest79@example.com,+49 790 2368710,vip,21,2025-08-10,early check-in,prefers minimal contact
+G0080,Nina,Smith,guest80@example.com,+49 453 8212753,silver,6,2026-01-22,king bed,anniversary stay
+G0081,Lucia,Weber,guest81@example.com,+49 316 3302417,none,1,2025-08-27,sea view,
+G0082,Sara,Taylor,guest82@example.com,+49 820 4860617,none,2,2024-12-19,sea view; late checkout,celebrating birthday
+G0083,Sophie,Tanaka,guest83@example.com,+49 689 8202195,vip,30,2024-10-05,early check-in,anniversary stay
+G0084,Carlos,Schneider,guest84@example.com,+49 951 7070880,none,2,2026-02-14,late checkout,allergic to feathers
+G0085,Emma,Tanaka,guest85@example.com,+49 326 6587964,silver,3,2025-11-24,,
+G0086,Yuki,García,guest86@example.com,+49 341 2724773,silver,5,2025-12-17,quiet room,
+G0087,Yuki,Martin,guest87@example.com,+49 575 8531380,silver,3,2024-06-17,sea view; hypoallergenic bedding,
+G0088,Robert,López,guest88@example.com,+49 705 1942411,silver,6,2025-05-20,late checkout; twin beds,prefers minimal contact
+G0089,Sophie,Dubois,guest89@example.com,+49 729 9507186,silver,3,2025-04-17,hypoallergenic bedding,
+G0090,Elena,Rossi,guest90@example.com,+49 561 2736473,silver,5,2025-05-29,late checkout; high floor,
+G0091,Carlos,Becker,guest91@example.com,+49 472 7255418,none,2,2025-07-30,early check-in,business traveler
+G0092,James,Taylor,guest92@example.com,+49 794 7485471,gold,8,2025-07-29,high floor,business traveler
+G0093,Pierre,Bernard,guest93@example.com,+49 232 2421349,none,1,2025-07-02,early check-in; sea view,
+G0094,Anna,Ahmed,guest94@example.com,+49 416 4024309,gold,15,2025-10-08,king bed,allergic to feathers
+G0095,James,Gomez,guest95@example.com,+49 889 9833734,none,1,2026-04-07,sea view; high floor,celebrating birthday
+G0096,Laura,Rossi,guest96@example.com,+49 520 7111929,none,1,2024-06-22,quiet room; king bed,anniversary stay
+G0097,Robert,Martin,guest97@example.com,+49 955 4255051,vip,23,2025-05-04,king bed; hypoallergenic bedding,anniversary stay
+G0098,Carlos,García,guest98@example.com,+49 993 5194357,vip,22,2026-03-23,king bed; sea view,
+G0099,Thomas,López,guest99@example.com,+49 560 9612629,gold,8,2025-12-16,late checkout,allergic to feathers
+G0100,Marco,Bernard,guest100@example.com,+49 614 7274032,vip,29,2025-09-16,late checkout,business traveler
+G0101,Yuki,Tanaka,guest101@example.com,+49 910 3450300,none,1,2025-12-26,,anniversary stay
+G0102,Carlos,Müller,guest102@example.com,+49 181 1318832,vip,30,2025-08-26,,
+G0103,Robert,Smith,guest103@example.com,+49 148 5000351,silver,3,2025-03-12,king bed; late checkout,
+G0104,David,García,guest104@example.com,+49 398 8201433,vip,34,2026-05-14,sea view; quiet room,celebrating birthday
+G0105,Patrick,Gomez,guest105@example.com,+49 905 9516493,none,1,2024-10-25,,celebrating birthday
+G0106,Maria,Müller,guest106@example.com,+49 465 2133461,vip,27,2025-05-27,,
+G0107,Patrick,Tanaka,guest107@example.com,+49 933 3937508,vip,27,2025-01-25,king bed; high floor,
+G0108,Marco,Ferrari,guest108@example.com,+49 142 6294819,none,2,2025-07-02,early check-in; king bed,anniversary stay
+G0109,Marco,Tanaka,guest109@example.com,+49 379 3088344,none,1,2025-05-04,early check-in,prefers minimal contact
+G0110,Ahmed,Ahmed,guest110@example.com,+49 916 9712003,silver,4,2025-08-15,,celebrating birthday
+G0111,Clara,Smith,guest111@example.com,+49 181 6501583,none,2,2024-07-08,twin beds,prefers minimal contact
+G0112,Laura,Rossi,guest112@example.com,+49 844 6914963,silver,4,2024-08-24,twin beds,
+G0113,Fatima,Becker,guest113@example.com,+49 131 3395441,none,2,2024-08-31,king bed; extra pillows,
+G0114,Isabelle,Rossi,guest114@example.com,+49 719 3574265,none,1,2024-06-19,sea view,business traveler
+G0115,Sara,Tanaka,guest115@example.com,+49 765 5675638,silver,4,2025-09-02,,
+G0116,Patrick,Smith,guest116@example.com,+49 368 5366937,gold,15,2025-02-13,,anniversary stay
+G0117,Sophie,Schneider,guest117@example.com,+49 276 8467726,gold,8,2026-02-15,sea view; hypoallergenic bedding,
+G0118,Pierre,Becker,guest118@example.com,+49 912 7064832,silver,5,2024-12-11,,
+G0119,Michael,Taylor,guest119@example.com,+49 686 7189302,none,1,2025-01-22,high floor; late checkout,
+G0120,John,Nguyen,guest120@example.com,+49 175 3102634,none,2,2025-06-25,late checkout; king bed,prefers minimal contact
+G0121,Isabelle,Becker,guest121@example.com,+49 886 3164813,gold,15,2025-02-26,extra pillows; late checkout,
+G0122,David,Ahmed,guest122@example.com,+49 631 5765539,none,1,2026-02-24,quiet room,anniversary stay
+G0123,Thomas,Nguyen,guest123@example.com,+49 694 3586950,none,2,2025-11-21,sea view; extra pillows,
+G0124,Isabelle,Williams,guest124@example.com,+49 732 1508113,none,1,2024-12-22,hypoallergenic bedding; twin beds,anniversary stay
+G0125,Sophie,Rossi,guest125@example.com,+49 261 8375356,silver,6,2025-03-16,king bed,allergic to feathers
+G0126,Michael,Bernard,guest126@example.com,+49 233 7216632,none,1,2024-12-04,late checkout; sea view,allergic to feathers
+G0127,Elena,Smith,guest127@example.com,+49 151 5868949,silver,5,2025-04-17,early check-in; quiet room,
+G0128,Thomas,Martin,guest128@example.com,+49 627 8831858,vip,40,2024-12-21,king bed,
+G0129,Isabelle,Ahmed,guest129@example.com,+49 149 1847927,none,2,2025-07-31,king bed,anniversary stay
+G0130,Maria,Ahmed,guest130@example.com,+49 882 7765480,silver,3,2025-05-06,,celebrating birthday
+G0131,Sophie,Bernard,guest131@example.com,+49 616 8555692,none,1,2024-10-29,late checkout,
+G0132,Michael,García,guest132@example.com,+49 303 9541658,none,2,2025-03-30,extra pillows; hypoallergenic bedding,
+G0133,Elena,Hoffmann,guest133@example.com,+49 627 3345135,none,2,2025-06-14,sea view; high floor,celebrating birthday
+G0134,Patrick,Martin,guest134@example.com,+49 825 6029651,silver,5,2025-01-14,,business traveler
+G0135,Pierre,Müller,guest135@example.com,+49 711 8962302,none,1,2025-08-17,quiet room; extra pillows,prefers minimal contact
+G0136,Isabelle,Smith,guest136@example.com,+49 295 1317716,none,2,2025-02-18,early check-in,
+G0137,Carlos,Martin,guest137@example.com,+49 993 2044906,silver,6,2025-12-25,quiet room; sea view,prefers minimal contact
+G0138,Patrick,Tanaka,guest138@example.com,+49 659 6943949,silver,5,2024-06-22,twin beds; king bed,allergic to feathers
+G0139,Robert,Ferrari,guest139@example.com,+49 806 9204110,none,2,2025-06-25,sea view,anniversary stay
+G0140,Elena,Weber,guest140@example.com,+49 143 5825636,none,1,2026-02-24,king bed,anniversary stay
+G0141,Maria,Taylor,guest141@example.com,+49 812 5557052,gold,10,2025-12-26,,allergic to feathers
+G0142,James,Williams,guest142@example.com,+49 438 8925622,none,1,2026-02-02,high floor; extra pillows,
+G0143,Robert,Tanaka,guest143@example.com,+49 392 1992583,silver,6,2026-02-13,quiet room; extra pillows,
+G0144,Thomas,Weber,guest144@example.com,+49 997 1628578,silver,3,2026-05-06,late checkout,business traveler
+G0145,Laura,López,guest145@example.com,+49 297 2889899,none,2,2025-06-11,,prefers minimal contact
+G0146,Clara,Weber,guest146@example.com,+49 681 4240708,gold,7,2025-11-17,early check-in; hypoallergenic bedding,business traveler
+G0147,Ahmed,Tanaka,guest147@example.com,+49 354 1114590,none,2,2025-08-21,quiet room,prefers minimal contact
+G0148,Emma,Nguyen,guest148@example.com,+49 111 5388133,vip,34,2024-07-15,quiet room,
+G0149,Sara,Gomez,guest149@example.com,+49 820 6217344,gold,11,2026-01-15,twin beds; sea view,allergic to feathers
+G0150,Emma,Hoffmann,guest150@example.com,+49 482 7976731,none,1,2024-10-30,hypoallergenic bedding,allergic to feathers
+G0151,Nina,Ahmed,guest151@example.com,+49 179 2882551,vip,30,2026-03-13,hypoallergenic bedding; quiet room,
+G0152,Lucia,Nguyen,guest152@example.com,+49 600 2525747,none,2,2024-12-09,extra pillows,prefers minimal contact
+G0153,Laura,Weber,guest153@example.com,+49 840 1365247,none,2,2025-04-05,extra pillows,allergic to feathers
+G0154,Pierre,Dubois,guest154@example.com,+49 654 2010921,silver,3,2026-03-06,extra pillows,anniversary stay
+G0155,Sara,Schneider,guest155@example.com,+49 990 7333337,silver,4,2025-04-26,,
+G0156,Sara,Gomez,guest156@example.com,+49 230 4736121,gold,9,2026-05-12,,anniversary stay
+G0157,Laura,Ahmed,guest157@example.com,+49 258 5624635,silver,6,2025-11-03,late checkout; extra pillows,celebrating birthday
+G0158,James,Hoffmann,guest158@example.com,+49 134 8490038,silver,4,2024-09-10,extra pillows; quiet room,
+G0159,Marco,García,guest159@example.com,+49 615 5853035,silver,4,2025-09-18,sea view; hypoallergenic bedding,allergic to feathers
+G0160,Maria,Rossi,guest160@example.com,+49 670 3938247,none,1,2024-08-12,early check-in; king bed,
+G0161,Elena,Weber,guest161@example.com,+49 485 4084977,none,2,2024-11-11,quiet room,allergic to feathers
+G0162,John,Williams,guest162@example.com,+49 670 9891787,none,1,2025-12-29,quiet room,anniversary stay
+G0163,Sophie,Taylor,guest163@example.com,+49 841 4195751,none,2,2026-03-24,early check-in,
+G0164,Ahmed,Ferrari,guest164@example.com,+49 990 6586214,vip,22,2025-07-09,,allergic to feathers
+G0165,Carlos,Ferrari,guest165@example.com,+49 506 5015307,none,1,2024-10-27,twin beds,celebrating birthday
+G0166,Nina,Martin,guest166@example.com,+49 577 2654371,silver,5,2025-01-20,quiet room,business traveler
+G0167,Elena,Müller,guest167@example.com,+49 367 8005797,none,2,2025-07-17,,allergic to feathers
+G0168,Patrick,Tanaka,guest168@example.com,+49 363 9197701,none,1,2024-07-27,king bed; hypoallergenic bedding,
+G0169,Patrick,Martin,guest169@example.com,+49 288 1985360,gold,9,2024-11-25,,
+G0170,Yuki,Johnson,guest170@example.com,+49 169 3533857,vip,20,2026-05-06,,prefers minimal contact
+G0171,Anna,Taylor,guest171@example.com,+49 664 7901115,none,1,2026-05-03,,anniversary stay
+G0172,Fatima,Williams,guest172@example.com,+49 925 4007598,silver,3,2026-01-26,,
+G0173,Sara,Dubois,guest173@example.com,+49 482 7812009,none,1,2025-01-30,quiet room; hypoallergenic bedding,anniversary stay
+G0174,Sara,Bernard,guest174@example.com,+49 665 8986040,gold,8,2026-03-19,extra pillows; high floor,
+G0175,Marco,Johnson,guest175@example.com,+49 316 8977571,silver,5,2025-08-11,,
+G0176,Anna,Ferrari,guest176@example.com,+49 701 3419132,gold,9,2025-04-03,,anniversary stay
+G0177,Sara,García,guest177@example.com,+49 909 2315798,none,1,2024-12-19,sea view; extra pillows,
+G0178,Carlos,Hoffmann,guest178@example.com,+49 506 6475691,silver,3,2026-04-15,twin beds; king bed,prefers minimal contact
+G0179,Fatima,Nguyen,guest179@example.com,+49 776 7376562,none,2,2026-02-17,twin beds; quiet room,
+G0180,Yuki,García,guest180@example.com,+49 857 7536772,none,2,2025-06-25,late checkout,
+G0181,Maria,Smith,guest181@example.com,+49 235 2464604,none,2,2025-11-05,king bed,celebrating birthday
+G0182,Sophie,Hoffmann,guest182@example.com,+49 712 6443037,none,1,2025-04-16,,anniversary stay
+G0183,Isabelle,Gomez,guest183@example.com,+49 273 7387623,silver,3,2025-11-23,,anniversary stay
+G0184,Thomas,Williams,guest184@example.com,+49 382 8064924,none,2,2025-07-13,late checkout,business traveler
+G0185,James,García,guest185@example.com,+49 411 1113537,none,1,2025-04-05,early check-in,business traveler
+G0186,Clara,Hoffmann,guest186@example.com,+49 811 4369728,silver,6,2025-01-10,high floor,celebrating birthday
+G0187,Sara,López,guest187@example.com,+49 936 7592357,none,2,2025-05-07,,allergic to feathers
+G0188,Lucia,Schneider,guest188@example.com,+49 916 5887726,silver,3,2026-03-06,king bed,
+G0189,Elena,Williams,guest189@example.com,+49 908 7324856,gold,11,2026-03-01,king bed,celebrating birthday
+G0190,Patrick,Hoffmann,guest190@example.com,+49 753 2425760,silver,3,2026-01-24,,business traveler
+G0191,James,Müller,guest191@example.com,+49 200 5340909,none,1,2025-09-30,hypoallergenic bedding; quiet room,prefers minimal contact
+G0192,Michael,Müller,guest192@example.com,+49 594 2754047,none,2,2025-07-17,late checkout,
+G0193,Laura,Ferrari,guest193@example.com,+49 633 9102153,vip,26,2025-05-24,late checkout,prefers minimal contact
+G0194,Marco,Smith,guest194@example.com,+49 123 6755892,gold,8,2024-07-21,,
+G0195,Clara,Taylor,guest195@example.com,+49 536 8751982,gold,15,2025-09-20,high floor,
+G0196,Carlos,Ferrari,guest196@example.com,+49 560 8206700,gold,7,2025-04-12,,allergic to feathers
+G0197,Thomas,Ahmed,guest197@example.com,+49 433 4306357,none,2,2025-02-01,,anniversary stay
+G0198,Sara,Nguyen,guest198@example.com,+49 216 6837206,gold,13,2025-05-20,high floor,anniversary stay
+G0199,David,Weber,guest199@example.com,+49 219 4070977,silver,4,2025-04-28,high floor; early check-in,celebrating birthday
+G0200,Ahmed,Taylor,guest200@example.com,+49 810 3906397,silver,6,2024-10-24,,prefers minimal contact

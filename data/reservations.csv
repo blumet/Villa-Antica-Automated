@@ -1,0 +1,162 @@
+reservation_id,guest_id,room_number,check_in,check_out,channel,rate_eur,commission_pct,status,booked_at,special_requests,adults,children
+RES00001,G0036,101,2026-07-11,2026-07-14,booking.com,128.47,0.15,confirmed,2026-06-10,twin beds; king bed,2,0
+RES00002,G0125,101,2026-07-11,2026-07-13,booking.com,123.64,0.15,confirmed,2026-05-09,king bed,2,1
+RES00003,G0176,102,2026-06-12,2026-06-16,airbnb,142.31,0.16,checked_in,2026-05-09,,1,0
+RES00004,G0075,103,2026-06-22,2026-06-25,direct,134.71,0,confirmed,2026-06-03,quiet room; high floor,2,1
+RES00005,G0141,104,2026-06-12,2026-06-13,corporate,107.48,0.1,checked_in,2026-04-21,,2,0
+RES00006,G0140,104,2026-06-18,2026-06-22,booking.com,148.99,0.15,confirmed,2026-05-03,king bed,1,1
+RES00007,G0009,104,2026-06-26,2026-06-29,airbnb,158.08,0.16,confirmed,2026-06-08,hypoallergenic bedding; sea view,2,0
+RES00008,G0199,104,2026-07-10,2026-07-12,booking.com,149.11,0.15,confirmed,2026-04-30,high floor; early check-in,2,1
+RES00009,G0043,105,2026-06-14,2026-06-16,corporate,141.05,0.1,checked_in,2026-04-21,,1,1
+RES00010,G0153,105,2026-06-25,2026-06-27,corporate,166.49,0.1,confirmed,2026-05-26,extra pillows,2,1
+RES00011,G0132,105,2026-07-09,2026-07-11,direct,152.57,0,confirmed,2026-06-10,extra pillows; hypoallergenic bedding,2,0
+RES00012,G0064,106,2026-06-25,2026-07-01,booking.com,155.65,0.15,confirmed,2026-05-01,twin beds,2,1
+RES00013,G0148,107,2026-06-28,2026-07-04,expedia,123.01,0.17,confirmed,2026-06-09,quiet room,1,1
+RES00014,G0045,108,2026-06-13,2026-06-16,expedia,147.61,0.17,checked_in,2026-05-21,extra pillows; hypoallergenic bedding,1,0
+RES00015,G0163,108,2026-06-17,2026-06-24,expedia,153.29,0.17,confirmed,2026-05-19,early check-in,1,1
+RES00016,G0055,108,2026-06-25,2026-06-28,airbnb,155.64,0.16,confirmed,2026-05-23,,1,1
+RES00017,G0088,108,2026-06-18,2026-06-19,direct,141.08,0,confirmed,2026-05-15,late checkout; twin beds,1,0
+RES00018,G0113,109,2026-06-28,2026-06-29,airbnb,110.57,0.16,confirmed,2026-04-30,king bed; extra pillows,1,1
+RES00019,G0071,110,2026-06-26,2026-07-02,direct,114.03,0,confirmed,2026-05-21,hypoallergenic bedding; twin beds,1,0
+RES00020,G0161,111,2026-07-07,2026-07-13,expedia,150.38,0.17,confirmed,2026-05-17,quiet room,1,0
+RES00021,G0001,111,2026-06-17,2026-06-21,booking.com,105.55,0.15,confirmed,2026-05-30,hypoallergenic bedding; early check-in,2,0
+RES00022,G0003,111,2026-06-18,2026-06-25,expedia,167.15,0.17,confirmed,2026-05-17,late checkout,1,1
+RES00023,G0059,113,2026-06-12,2026-06-13,airbnb,140.69,0.16,checked_in,2026-06-03,extra pillows,2,1
+RES00024,G0036,113,2026-07-11,2026-07-18,airbnb,150.23,0.16,confirmed,2026-06-05,twin beds; king bed,1,0
+RES00025,G0136,113,2026-07-04,2026-07-05,corporate,142.8,0.1,confirmed,2026-05-16,early check-in,2,0
+RES00026,G0161,114,2026-06-12,2026-06-16,booking.com,134.96,0.15,checked_in,2026-04-15,quiet room,1,0
+RES00027,G0036,115,2026-06-12,2026-06-17,direct,120.43,0,checked_in,2026-05-13,twin beds; king bed,2,0
+RES00028,G0071,115,2026-07-02,2026-07-04,direct,139.27,0,confirmed,2026-05-06,hypoallergenic bedding; twin beds,2,0
+RES00029,G0169,116,2026-06-12,2026-06-14,expedia,131.13,0.17,checked_in,2026-05-28,,2,1
+RES00030,G0127,117,2026-06-22,2026-06-23,airbnb,131.97,0.16,confirmed,2026-05-06,early check-in; quiet room,1,0
+RES00031,G0093,118,2026-06-13,2026-06-15,expedia,143.32,0.17,checked_in,2026-05-05,early check-in; sea view,2,1
+RES00032,G0196,118,2026-06-17,2026-06-24,airbnb,97.2,0.16,confirmed,2026-06-09,,1,1
+RES00033,G0056,119,2026-06-13,2026-06-14,direct,126.32,0,checked_in,2026-05-01,quiet room; twin beds,2,1
+RES00034,G0022,119,2026-07-04,2026-07-09,corporate,106.99,0.1,confirmed,2026-06-08,king bed; hypoallergenic bedding,2,0
+RES00035,G0131,119,2026-06-19,2026-06-26,booking.com,134.62,0.15,confirmed,2026-05-19,late checkout,1,1
+RES00036,G0179,119,2026-07-12,2026-07-18,airbnb,113.18,0.16,confirmed,2026-05-29,twin beds; quiet room,1,1
+RES00037,G0030,120,2026-06-12,2026-06-17,airbnb,104.64,0.16,checked_in,2026-04-28,high floor,1,0
+RES00038,G0182,121,2026-06-14,2026-06-15,booking.com,125.83,0.15,checked_in,2026-05-20,,2,0
+RES00039,G0033,121,2026-07-13,2026-07-19,expedia,104.5,0.17,confirmed,2026-06-12,,2,1
+RES00040,G0070,121,2026-06-23,2026-06-24,corporate,147.29,0.1,confirmed,2026-05-08,,1,1
+RES00041,G0131,122,2026-06-30,2026-07-01,expedia,157.87,0.17,confirmed,2026-06-03,late checkout,2,0
+RES00042,G0066,122,2026-07-06,2026-07-11,direct,148.04,0,confirmed,2026-05-30,,1,0
+RES00043,G0004,122,2026-06-30,2026-07-01,booking.com,122.21,0.15,confirmed,2026-06-04,high floor; quiet room,1,0
+RES00044,G0142,123,2026-06-13,2026-06-15,airbnb,113.92,0.16,checked_in,2026-04-25,high floor; extra pillows,2,1
+RES00045,G0031,124,2026-07-13,2026-07-19,corporate,99.79,0.1,confirmed,2026-05-30,,1,1
+RES00046,G0018,124,2026-06-24,2026-07-01,airbnb,151.69,0.16,confirmed,2026-05-25,,2,0
+RES00047,G0142,125,2026-06-13,2026-06-14,airbnb,111.63,0.16,checked_in,2026-05-05,high floor; extra pillows,2,0
+RES00048,G0095,125,2026-07-09,2026-07-13,corporate,151.86,0.1,confirmed,2026-05-10,sea view; high floor,1,0
+RES00049,G0002,125,2026-06-22,2026-06-23,airbnb,134.99,0.16,confirmed,2026-05-04,sea view; early check-in,1,1
+RES00050,G0001,125,2026-07-08,2026-07-15,airbnb,148.36,0.16,confirmed,2026-06-07,hypoallergenic bedding; early check-in,1,0
+RES00051,G0108,126,2026-06-14,2026-06-15,airbnb,136.16,0.16,checked_in,2026-06-06,early check-in; king bed,1,0
+RES00052,G0180,126,2026-07-08,2026-07-12,expedia,102.11,0.17,confirmed,2026-06-07,late checkout,1,1
+RES00053,G0020,126,2026-06-16,2026-06-21,corporate,127.32,0.1,confirmed,2026-06-05,twin beds; late checkout,1,1
+RES00054,G0067,126,2026-06-27,2026-07-04,expedia,146.45,0.17,confirmed,2026-05-24,,2,1
+RES00055,G0060,127,2026-06-19,2026-06-21,direct,152.16,0,confirmed,2026-05-07,late checkout,1,0
+RES00056,G0028,127,2026-06-29,2026-07-03,booking.com,118.61,0.15,confirmed,2026-06-06,,2,0
+RES00057,G0116,128,2026-06-13,2026-06-17,expedia,142.92,0.17,checked_in,2026-06-05,,1,1
+RES00058,G0056,129,2026-06-14,2026-06-16,expedia,136.14,0.17,checked_in,2026-05-20,quiet room; twin beds,2,0
+RES00059,G0067,129,2026-06-27,2026-06-28,booking.com,157.53,0.15,confirmed,2026-05-09,,1,0
+RES00060,G0119,129,2026-07-10,2026-07-17,direct,106.07,0,confirmed,2026-06-13,high floor; late checkout,1,0
+RES00061,G0034,130,2026-06-13,2026-06-17,booking.com,134.94,0.15,checked_in,2026-04-30,king bed,1,1
+RES00062,G0006,131,2026-06-12,2026-06-14,direct,123.28,0,checked_in,2026-06-01,sea view; late checkout,1,1
+RES00063,G0119,133,2026-06-12,2026-06-14,direct,158.61,0,checked_in,2026-04-24,high floor; late checkout,2,1
+RES00064,G0098,134,2026-06-13,2026-06-15,airbnb,145.06,0.16,checked_in,2026-05-30,king bed; sea view,2,1
+RES00065,G0039,134,2026-07-04,2026-07-09,direct,181.38,0,confirmed,2026-05-03,sea view,2,1
+RES00066,G0106,134,2026-06-16,2026-06-20,corporate,132.16,0.1,confirmed,2026-05-20,,1,1
+RES00067,G0052,134,2026-07-05,2026-07-07,corporate,216.45,0.1,confirmed,2026-05-10,high floor; hypoallergenic bedding,1,1
+RES00068,G0183,135,2026-06-12,2026-06-16,expedia,180.2,0.17,checked_in,2026-05-18,,2,1
+RES00069,G0047,135,2026-07-04,2026-07-07,direct,144.37,0,confirmed,2026-05-27,extra pillows,1,1
+RES00070,G0136,135,2026-07-03,2026-07-10,expedia,216.96,0.17,confirmed,2026-06-03,early check-in,1,0
+RES00071,G0169,136,2026-06-12,2026-06-15,booking.com,182.36,0.15,checked_in,2026-04-23,,1,0
+RES00072,G0091,136,2026-06-22,2026-06-24,booking.com,179.1,0.15,confirmed,2026-04-30,early check-in,2,0
+RES00073,G0181,136,2026-07-03,2026-07-08,expedia,137.22,0.17,confirmed,2026-06-01,king bed,2,1
+RES00074,G0045,136,2026-06-17,2026-06-18,airbnb,129.22,0.16,confirmed,2026-05-06,sea view,1,0
+RES00075,G0001,137,2026-06-21,2026-06-26,expedia,199.0,0.17,confirmed,2026-05-23,hypoallergenic bedding; early check-in,1,1
+RES00076,G0016,137,2026-07-03,2026-07-05,direct,189.54,0,confirmed,2026-06-04,quiet room,1,1
+RES00077,G0019,137,2026-07-06,2026-07-12,expedia,160.79,0.17,confirmed,2026-06-07,late checkout; high floor,2,1
+RES00078,G0035,138,2026-06-28,2026-07-04,booking.com,197.64,0.15,confirmed,2026-05-13,quiet room; early check-in,2,0
+RES00079,G0182,138,2026-07-13,2026-07-19,corporate,210.38,0.1,confirmed,2026-05-22,,1,0
+RES00080,G0097,139,2026-06-14,2026-06-17,expedia,142.77,0.17,checked_in,2026-06-11,king bed; hypoallergenic bedding,2,0
+RES00081,G0155,139,2026-07-04,2026-07-11,expedia,144.54,0.17,confirmed,2026-05-08,,1,1
+RES00082,G0037,140,2026-06-14,2026-06-15,expedia,153.25,0.17,checked_in,2026-05-22,,1,0
+RES00083,G0115,140,2026-06-21,2026-06-24,direct,147.21,0,confirmed,2026-06-09,,2,1
+RES00084,G0028,140,2026-06-27,2026-06-28,direct,164.75,0,confirmed,2026-05-18,,1,1
+RES00085,G0097,141,2026-06-27,2026-07-02,expedia,133.43,0.17,confirmed,2026-05-14,king bed; hypoallergenic bedding,1,0
+RES00086,G0116,141,2026-07-12,2026-07-19,direct,127.11,0,confirmed,2026-06-12,,2,1
+RES00087,G0027,141,2026-06-20,2026-06-23,direct,206.58,0,confirmed,2026-06-03,,1,0
+RES00088,G0153,142,2026-07-07,2026-07-11,corporate,126.88,0.1,confirmed,2026-05-03,extra pillows,1,1
+RES00089,G0041,142,2026-06-25,2026-06-26,direct,143.12,0,confirmed,2026-06-01,king bed; early check-in,2,1
+RES00090,G0077,143,2026-06-16,2026-06-17,booking.com,160.54,0.15,confirmed,2026-05-09,early check-in; late checkout,2,0
+RES00091,G0014,143,2026-06-28,2026-06-29,expedia,132.15,0.17,confirmed,2026-05-02,,2,0
+RES00092,G0025,144,2026-06-14,2026-06-16,direct,171.32,0,checked_in,2026-06-06,,2,0
+RES00093,G0102,144,2026-07-13,2026-07-17,airbnb,185.48,0.16,confirmed,2026-06-08,,2,0
+RES00094,G0095,144,2026-06-20,2026-06-23,airbnb,165.46,0.16,confirmed,2026-05-28,sea view; high floor,2,1
+RES00095,G0068,145,2026-06-12,2026-06-15,booking.com,135.57,0.15,checked_in,2026-04-22,,1,0
+RES00096,G0139,145,2026-07-03,2026-07-10,airbnb,145.16,0.16,confirmed,2026-06-10,sea view,2,1
+RES00097,G0138,145,2026-07-13,2026-07-18,airbnb,145.91,0.16,confirmed,2026-05-25,twin beds; king bed,1,1
+RES00098,G0183,146,2026-06-12,2026-06-17,direct,187.58,0,checked_in,2026-04-19,,1,0
+RES00099,G0045,146,2026-07-10,2026-07-12,booking.com,141.92,0.15,confirmed,2026-06-11,sea view,2,0
+RES00100,G0175,146,2026-07-11,2026-07-13,airbnb,182.33,0.16,confirmed,2026-05-06,,2,1
+RES00101,G0187,146,2026-06-27,2026-06-28,direct,175.74,0,confirmed,2026-05-09,,2,1
+RES00102,G0134,147,2026-06-12,2026-06-13,airbnb,170.38,0.16,checked_in,2026-05-07,,2,0
+RES00103,G0039,147,2026-07-03,2026-07-08,booking.com,178.19,0.15,confirmed,2026-06-07,sea view,1,0
+RES00104,G0074,147,2026-07-13,2026-07-16,corporate,162.21,0.1,confirmed,2026-05-20,extra pillows; sea view,2,1
+RES00105,G0010,147,2026-06-27,2026-06-30,booking.com,137.38,0.15,confirmed,2026-05-06,hypoallergenic bedding,2,0
+RES00106,G0085,148,2026-07-08,2026-07-09,booking.com,168.2,0.15,confirmed,2026-05-27,,2,0
+RES00107,G0087,148,2026-06-23,2026-06-26,expedia,202.38,0.17,confirmed,2026-04-30,sea view; hypoallergenic bedding,1,0
+RES00108,G0035,148,2026-06-29,2026-07-05,expedia,195.98,0.17,confirmed,2026-05-24,quiet room; early check-in,2,1
+RES00109,G0155,149,2026-06-13,2026-06-15,direct,144.86,0,checked_in,2026-04-19,,2,1
+RES00110,G0015,149,2026-06-20,2026-06-27,corporate,130.1,0.1,confirmed,2026-05-12,,2,0
+RES00111,G0200,149,2026-06-15,2026-06-20,corporate,140.16,0.1,confirmed,2026-06-01,,1,0
+RES00112,G0117,151,2026-06-12,2026-06-15,direct,144.09,0,checked_in,2026-05-17,sea view; hypoallergenic bedding,2,1
+RES00113,G0062,153,2026-06-12,2026-06-16,expedia,159.41,0.17,checked_in,2026-04-15,sea view,2,1
+RES00114,G0042,153,2026-07-11,2026-07-17,expedia,188.06,0.17,confirmed,2026-05-26,king bed,1,1
+RES00115,G0013,153,2026-07-03,2026-07-10,booking.com,196.52,0.15,confirmed,2026-05-31,,1,0
+RES00116,G0069,154,2026-06-15,2026-06-20,airbnb,204.41,0.16,confirmed,2026-05-01,,1,1
+RES00117,G0034,155,2026-06-14,2026-06-19,booking.com,145.62,0.15,checked_in,2026-05-04,king bed,2,1
+RES00118,G0097,155,2026-06-23,2026-06-27,expedia,144.29,0.17,confirmed,2026-05-25,king bed; hypoallergenic bedding,2,0
+RES00119,G0002,155,2026-07-11,2026-07-17,corporate,202.06,0.1,confirmed,2026-05-09,sea view; early check-in,2,1
+RES00120,G0176,155,2026-06-17,2026-06-21,direct,155.27,0,confirmed,2026-05-27,,2,1
+RES00121,G0067,156,2026-06-14,2026-06-16,expedia,163.82,0.17,checked_in,2026-05-27,,1,1
+RES00122,G0175,156,2026-06-15,2026-06-21,booking.com,184.95,0.15,confirmed,2026-05-26,,2,1
+RES00123,G0104,156,2026-06-16,2026-06-22,airbnb,178.22,0.16,confirmed,2026-05-08,sea view; quiet room,1,1
+RES00124,G0186,157,2026-06-12,2026-06-17,booking.com,226.97,0.15,checked_in,2026-04-28,high floor,2,1
+RES00125,G0169,157,2026-06-24,2026-06-26,corporate,167.42,0.1,confirmed,2026-06-05,,2,0
+RES00126,G0175,158,2026-06-14,2026-06-15,expedia,193.46,0.17,checked_in,2026-04-25,,2,1
+RES00127,G0096,158,2026-06-24,2026-06-29,expedia,210.26,0.17,confirmed,2026-06-06,quiet room; king bed,2,0
+RES00128,G0163,158,2026-07-04,2026-07-09,corporate,164.33,0.1,confirmed,2026-06-01,early check-in,1,1
+RES00129,G0106,159,2026-07-12,2026-07-19,direct,173.64,0,confirmed,2026-06-01,,2,1
+RES00130,G0146,159,2026-06-25,2026-06-27,airbnb,256.9,0.16,confirmed,2026-06-02,early check-in; hypoallergenic bedding,1,1
+RES00131,G0086,160,2026-06-12,2026-06-15,booking.com,170.28,0.15,checked_in,2026-05-12,quiet room,2,0
+RES00132,G0148,160,2026-07-10,2026-07-14,booking.com,245.34,0.15,confirmed,2026-06-08,quiet room,1,1
+RES00133,G0163,161,2026-06-13,2026-06-17,airbnb,241.05,0.16,checked_in,2026-05-17,early check-in,1,0
+RES00134,G0188,161,2026-07-13,2026-07-14,expedia,193.7,0.17,confirmed,2026-05-11,king bed,1,0
+RES00135,G0161,163,2026-06-12,2026-06-14,booking.com,234.15,0.15,checked_in,2026-05-21,quiet room,1,0
+RES00136,G0129,163,2026-06-20,2026-06-23,corporate,163.64,0.1,confirmed,2026-06-11,king bed,2,1
+RES00137,G0117,163,2026-07-01,2026-07-06,corporate,195.53,0.1,confirmed,2026-05-01,sea view; hypoallergenic bedding,1,1
+RES00138,G0126,163,2026-06-21,2026-06-28,expedia,175.29,0.17,confirmed,2026-05-19,late checkout; sea view,1,0
+RES00139,G0187,164,2026-07-08,2026-07-10,booking.com,158.56,0.15,confirmed,2026-05-12,,1,0
+RES00140,G0094,165,2026-06-12,2026-06-16,direct,185.7,0,checked_in,2026-05-06,king bed,1,0
+RES00141,G0013,167,2026-06-13,2026-06-17,direct,195.41,0,checked_in,2026-05-06,,2,1
+RES00142,G0053,167,2026-06-28,2026-07-01,direct,233.41,0,confirmed,2026-05-02,extra pillows,2,0
+RES00143,G0108,168,2026-06-12,2026-06-17,direct,213.93,0,checked_in,2026-05-22,early check-in; king bed,1,0
+RES00144,G0051,168,2026-07-09,2026-07-11,corporate,186.77,0.1,confirmed,2026-05-11,,1,1
+RES00145,G0181,168,2026-06-20,2026-06-23,airbnb,160.61,0.16,confirmed,2026-05-13,king bed,1,1
+RES00146,G0085,168,2026-06-15,2026-06-16,booking.com,234.58,0.15,confirmed,2026-06-06,,2,0
+RES00147,G0186,171,2026-06-12,2026-06-15,direct,183.78,0,checked_in,2026-05-22,high floor,2,1
+RES00148,G0011,173,2026-07-10,2026-07-13,expedia,337.7,0.17,confirmed,2026-05-17,hypoallergenic bedding,1,0
+RES00149,G0195,174,2026-06-14,2026-06-15,direct,312.3,0,checked_in,2026-06-01,high floor,2,1
+RES00150,G0160,174,2026-06-17,2026-06-23,expedia,286.6,0.17,confirmed,2026-05-23,early check-in; king bed,1,0
+RES00151,G0103,174,2026-06-23,2026-06-27,airbnb,364.4,0.16,confirmed,2026-04-30,king bed; late checkout,2,1
+RES00152,G0167,174,2026-06-19,2026-06-20,booking.com,340.96,0.15,confirmed,2026-06-10,,1,0
+RES00153,G0152,175,2026-07-03,2026-07-10,airbnb,337.97,0.16,confirmed,2026-06-02,extra pillows,2,1
+RES00154,G0157,175,2026-07-06,2026-07-13,direct,371.83,0,confirmed,2026-06-05,late checkout; extra pillows,2,1
+RES00155,G0029,175,2026-06-16,2026-06-20,airbnb,234.64,0.16,confirmed,2026-05-03,,2,0
+RES00156,G0172,176,2026-07-01,2026-07-06,expedia,339.62,0.17,confirmed,2026-05-05,,1,1
+RES00157,G0124,177,2026-07-06,2026-07-12,expedia,331.76,0.17,confirmed,2026-06-04,hypoallergenic bedding; twin beds,1,0
+RES00158,G0130,178,2026-06-30,2026-07-07,airbnb,370.06,0.16,confirmed,2026-06-09,,2,1
+RES00159,G0062,179,2026-06-14,2026-06-17,expedia,294.78,0.17,checked_in,2026-05-07,sea view,2,1
+RES00160,G0021,179,2026-07-10,2026-07-14,airbnb,320.27,0.16,confirmed,2026-06-08,,2,1
+RES00161,G0081,180,2026-06-12,2026-06-16,direct,311.18,0,checked_in,2026-06-03,sea view,2,1
