@@ -27,10 +27,11 @@ if __name__ == "__main__":
     print("  Live stream: GET /stream/activity (SSE)")
     print("  Scenarios:   POST /api/scenarios/a|b|c")
     print("=" * 56)
+    port = int(os.getenv("PORT", 8000))
     uvicorn.run(
         "dashboard.app:app",
         host="0.0.0.0",
-        port=8000,
+        port=port,
         reload=False,
         log_level="warning",
     )
