@@ -1,1 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Antica — Guest Communication</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .panel {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message.guest {
+            justify-content: flex-end;
+        }
+
+        .message-bubble {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            line-height: 1.4;
+        }
+
+        .message.bot .message-bubble {
+            background: #667eea;
+            color: white;
+            border-radius: 12px 12px 12px 0;
+        }
+
+        .message.guest .message-bubble {
+            background: #e8e8e8;
+            color: #333;
+            border-radius: 12px 12px 0 12px;
+        }
+
+        .message.system .message-bubble {
+            background: #fff3cd;
+            color: #856404;
+            border-left: 4px solid #ffc107;
+        }
+
+        .message-meta {
+            font-size: 12px;
+            color: #999;
+            padding: 0 5px;
+        }
+
+        .options-container {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .option-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .option-button:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .option-button:active {
+            transform: scale(0.98);
+        }
+
+        .scenario-info {
+            padding: 20px;
+            background: #f0f4ff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .scenario-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .scenario-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .detail-item {
+            padding: 5px 0;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .resolution-panel {
+            background: #f0f9f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #28a745;
+        }
+
+        .resolution-panel h4 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .satisfaction-meter {
+            margin: 15px 0;
+        }
+
+        .satisfaction-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .satisfaction-bar {
+            width: 100%;
+            height: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .satisfaction-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ffc107 0%, #28a745 100%);
+            transition: width 0.5s ease;
+        }
+
+        .agents-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .agent-badge {
+            background: #667eea;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .action-log {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .action-entry {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .action-entry:last-child {
+            border-bottom: none;
+        }
+
+        .action-time {
+            color: #999;
+            font-weight: 600;
+        }
+
+        .action-text {
+            color: #555;
+        }
+
+        .start-button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .start-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .chat-empty {
+            text-align: center;
+            color: #999;
+            padding: 40px 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .reward-box {
+            background: #ffd700;
+            color: #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Chat Panel -->
+        <div class="panel">
+            <div class="panel-header">🏨 Guest Communication Hub</div>
+            <div class="chat-container" id="chatContainer">
+                <div class="chat-empty">
+                    <p>No active guest interaction</p>
+                    <p style="font-size: 12px; margin-top: 10px;">Click "Start New Scenario" to begin</p>
+                </div>
+            </div>
+            <div class="options-container" id="optionsContainer">
+                <button class="start-button" onclick="startNewScenario()">
+                    🎬 Start New Scenario
+                </button>
+            </div>
+        </div>
+
+        <!-- Info & Status Panel -->
+        <div class="panel">
+            <div class="panel-header">📊 Incident Details & Resolution</div>
+            <div style="flex: 1; overflow-y: auto; padding: 20px;">
+                <div id="scenarioInfo" class="scenario-info" style="display: none;">
+                    <h3 id="scenarioTitle">Loading...</h3>
+                    <div class="scenario-detail">
+                        <div class="detail-item">
+                            <div class="detail-label">Guest:</div>
+                            <div id="guestName">—</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Room:</div>
+                            <div id="roomNumber">—</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Issue:</div>
+                            <div id="issueType">—</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Status:</div>
+                            <div id="statusBadge" style="color: #ffc107; font-weight: 600;">—</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resolutionPanel" class="resolution-panel" style="display: none;">
+                    <h4>✅ Resolution Summary</h4>
+                    <p id="resolutionText" style="font-size: 14px; line-height: 1.6; margin-bottom: 15px;"></p>
+
+                    <div class="satisfaction-meter">
+                        <div class="satisfaction-label">
+                            <span>Guest Satisfaction</span>
+                            <span id="satisfactionScore">0%</span>
+                        </div>
+                        <div class="satisfaction-bar">
+                            <div class="satisfaction-fill" id="satisfactionFill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <strong style="color: #333;">Agents Involved:</strong>
+                        <div class="agents-list" id="agentsList"></div>
+                    </div>
+
+                    <div id="rewardBox" class="reward-box" style="display: none;"></div>
+                </div>
+
+                <div class="action-log" id="actionLog" style="display: none;">
+                    <strong style="display: block; margin-bottom: 10px;">Live Activity Log</strong>
+                    <div id="actionEntries"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSimulation = null;
+
+        async function startNewScenario() {
+            // Fetch random scenario from backend
+            const response = await fetch('/api/guest/new-scenario');
+            const data = await response.json();
+
+            currentSimulation = data;
+            renderChat(data.conversation);
+            renderScenarioInfo(data.scenario);
+            renderOptions(data.options);
+        }
+
+        async function selectOption(optionIndex) {
+            const response = await fetch('/api/guest/choose-option', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ optionIndex })
+            });
+            const data = await response.json();
+
+            currentSimulation = data;
+
+            // Re-render with new message
+            renderChat(data.conversation);
+            renderResolution(data);
+            renderOptions([]);
+        }
+
+        function renderChat(messages) {
+            const container = document.getElementById('chatContainer');
+            container.innerHTML = messages.map(msg => `
+                <div class="message ${msg.role}">
+                    <div class="message-bubble">${escapeHtml(msg.message)}</div>
+                    <div class="message-meta">${msg.name}<br/>${new Date(msg.time).toLocaleTimeString()}</div>
+                </div>
+            `).join('');
+
+            // Scroll to bottom
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function renderScenarioInfo(scenario) {
+            document.getElementById('scenarioInfo').style.display = 'block';
+            document.getElementById('scenarioTitle').textContent = scenario.title;
+            document.getElementById('guestName').textContent = scenario.guest_name;
+            document.getElementById('roomNumber').textContent = scenario.room;
+            document.getElementById('issueType').textContent = scenario.title;
+            document.getElementById('statusBadge').textContent = 'ACTIVE';
+            document.getElementById('statusBadge').style.color = '#ffc107';
+        }
+
+        function renderOptions(options) {
+            const container = document.getElementById('optionsContainer');
+
+            if (options.length === 0) {
+                container.innerHTML = '<button class="start-button" onclick="startNewScenario()">🎬 Start New Scenario</button>';
+                return;
+            }
+
+            container.innerHTML = '<strong style="display: block; margin-bottom: 10px; color: #333;">Guest Options:</strong>' +
+                options.map((opt, idx) => `
+                    <button class="option-button" onclick="selectOption(${idx})">
+                        ${escapeHtml(opt.text)}
+                    </button>
+                `).join('');
+        }
+
+        function renderResolution(data) {
+            const panel = document.getElementById('resolutionPanel');
+            panel.style.display = 'block';
+
+            document.getElementById('resolutionText').textContent = data.resolution_message;
+            document.getElementById('satisfactionScore').textContent = `${data.guest_satisfaction}%`;
+            document.getElementById('satisfactionFill').style.width = `${data.guest_satisfaction}%`;
+
+            const agentsList = document.getElementById('agentsList');
+            agentsList.innerHTML = data.agents_involved
+                .map(agent => `<span class="agent-badge">${agent}</span>`)
+                .join('');
+
+            // Show reward if satisfaction > 60
+            const rewardBox = document.getElementById('rewardBox');
+            if (data.guest_satisfaction > 60) {
+                rewardBox.style.display = 'block';
+                rewardBox.innerHTML = `🎁 <strong>${data.reward}</strong>`;
+            } else {
+                rewardBox.style.display = 'none';
+            }
+
+            // Update status
+            document.getElementById('statusBadge').textContent = 'RESOLVED';
+            document.getElementById('statusBadge').style.color = '#28a745';
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Auto-load on page open
+        window.addEventListener('load', () => {
+            // Optionally auto-start first scenario
+            // startNewScenario();
+        });
+    </script>
+</body>
+</html>
