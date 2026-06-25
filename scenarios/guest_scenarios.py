@@ -1,0 +1,261 @@
+"""
+Villa Antica Barcelona — Guest Communication Scenarios
+10 realistic hotel guest issues/requests for simulation
+"""
+
+GUEST_SCENARIOS = [
+    {
+        "id": "late_checkout",
+        "title": "Late Checkout Request",
+        "guest_name": "María García",
+        "room": "304",
+        "check_in": "2024-06-23",
+        "check_out": "2024-06-24",
+        "initial_message": "Hi, I have a business lunch at 2pm in the Gothic Quarter and I can't make it back by checkout time. Is there any way I can stay until 3pm?",
+        "context": "Standard checkout is 11am. Guest has executive status (high-value).",
+        "guest_personality": "Professional, polite, willing to pay extra",
+        "bot_responses": [
+            "I can help with that. Let me check availability for a late checkout.",
+            "We have late checkout availability. Options: (1) Standard extension to 2pm (€30), (2) Full day extension to 6pm (€80), (3) Free extension if room is available.",
+        ],
+        "guest_options": [
+            {"text": "Just until 2pm is perfect, charge me", "action": "charge_extension", "amount": 30},
+            {"text": "Actually, make it until 6pm", "action": "charge_extension", "amount": 80},
+            {"text": "Can you do it for free?", "action": "request_free_extension", "escalation": "concierge"},
+        ],
+        "required_agents": ["concierge", "housekeeping"],
+        "agent_actions": ["update_checkout_time", "charge_room", "notify_housekeeping"],
+        "satisfaction_drivers": ["speed", "flexibility", "politeness"],
+        "reward_if_happy": "Complimentary welcome drink at bar tonight",
+    },
+    {
+        "id": "room_temperature",
+        "title": "AC Malfunction",
+        "guest_name": "Robert Chen",
+        "room": "512",
+        "check_in": "2024-06-22",
+        "check_out": "2024-06-25",
+        "initial_message": "The air conditioning in my room isn't working. It's 28 degrees in here and it's unbearable. I need this fixed immediately.",
+        "context": "Summer heat, Barcelona 30°C outside. AC compressor issue (maintenance ticket).",
+        "guest_personality": "Frustrated, executive, high expectations",
+        "bot_responses": [
+            "I sincerely apologize for the discomfort. I'm dispatching maintenance immediately.",
+            "This is unacceptable. While we fix it (ETA 15 min), would you like: (1) Move to another room, (2) Complimentary minibar + €50 credit, (3) Both?",
+        ],
+        "guest_options": [
+            {"text": "Move me to another room NOW", "action": "room_change", "escalation": "high"},
+            {"text": "Fix it here and give me the credit", "action": "credit_only", "amount": 50},
+            {"text": "Move me AND the credit", "action": "room_change_plus_credit", "amount": 50},
+        ],
+        "required_agents": ["maintenance", "housekeeping", "front_desk"],
+        "agent_actions": ["dispatch_maintenance", "prepare_room_change", "issue_credit"],
+        "satisfaction_drivers": ["speed", "empathy", "compensation"],
+        "reward_if_happy": "Breakfast upgrade tomorrow + apology note from GM",
+    },
+    {
+        "id": "noise_complaint",
+        "title": "Excessive Noise",
+        "guest_name": "Sophie Dubois",
+        "room": "408",
+        "check_in": "2024-06-23",
+        "check_out": "2024-06-24",
+        "initial_message": "It's 11pm and there's construction noise outside. I have an early meeting tomorrow and I can't sleep. This is ridiculous.",
+        "context": "Street construction 2 blocks away. Low frequency vibration. Guest is light sleeper (noted in preferences).",
+        "guest_personality": "Angry, professional, needs sleep",
+        "bot_responses": [
+            "I'm very sorry about the construction noise. Unfortunately it's outside our control, but we can help.",
+            "Options: (1) Move to quieter room (interior courtyard), (2) Noise canceling headphones + sleep mask, (3) Free room upgrade for tomorrow night as compensation",
+        ],
+        "guest_options": [
+            {"text": "Move me to a quiet room", "action": "room_change", "escalation": "medium"},
+            {"text": "Headphones and mask are fine", "action": "provide_items", "escalation": "low"},
+            {"text": "I want compensation for the inconvenience", "action": "request_credit", "escalation": "high"},
+        ],
+        "required_agents": ["housekeeping", "front_desk"],
+        "agent_actions": ["prepare_quiet_room", "provide_amenities", "issue_upgrade"],
+        "satisfaction_drivers": ["empathy", "speed", "compensation"],
+        "reward_if_happy": "Complimentary spa credit €75",
+    },
+    {
+        "id": "lost_item",
+        "title": "Lost/Forgotten Item",
+        "guest_name": "David Thompson",
+        "room": "602",
+        "check_in": "2024-06-22",
+        "check_out": "2024-06-24",
+        "initial_message": "I just realized I left my passport in the room safe. I'm already at the airport. Can someone get it to me?",
+        "context": "Guest checked out 2 hours ago. Passport in room safe. Flight departs in 4 hours.",
+        "guest_personality": "Panicked, urgent, will pay for expedited service",
+        "bot_responses": [
+            "Don't worry, we'll find it immediately. I'm checking with housekeeping now.",
+            "We found your passport in the safe. Options: (1) We'll courier it to airport (€80, 1.5 hours), (2) Come back to hotel (fastest), (3) Airport lost & found assistance",
+        ],
+        "guest_options": [
+            {"text": "Courier it to the airport, spare no expense", "action": "courier_service", "cost": 80},
+            {"text": "I'll come back to the hotel quickly", "action": "guest_returns", "escalation": "low"},
+            {"text": "This is a mess. What's the cheapest option?", "action": "budget_option", "escalation": "medium"},
+        ],
+        "required_agents": ["housekeeping", "concierge", "logistics"],
+        "agent_actions": ["retrieve_item", "courier_dispatch", "document_incident"],
+        "satisfaction_drivers": ["speed", "problem_solving", "empathy"],
+        "reward_if_happy": "€50 credit for future stay + apology gift",
+    },
+    {
+        "id": "special_request",
+        "title": "Allergy/Dietary Issue",
+        "guest_name": "Fatima Al-Mansouri",
+        "room": "705",
+        "check_in": "2024-06-23",
+        "check_out": "2024-06-25",
+        "initial_message": "I ordered room service with no nuts due to my severe allergy. The meal arrived with almond sauce. This is dangerous. I need to speak to management immediately.",
+        "context": "Guest has documented severe tree nut allergy. Note should have been flagged in system.",
+        "guest_personality": "Angry, safety-concerned, rightfully upset",
+        "bot_responses": [
+            "I'm extremely sorry. This is a serious lapse in our safety protocols. Connecting you to our GM immediately.",
+            "We're taking this very seriously. Immediate actions: (1) Replace entire meal (prepared by head chef personally), (2) Full meal refund + €100 apology credit, (3) Executive meeting about food safety",
+        ],
+        "guest_options": [
+            {"text": "I just need a safe replacement meal", "action": "replace_meal", "escalation": "medium"},
+            {"text": "I want a refund AND compensation", "action": "refund_plus_credit", "amount": 100},
+            {"text": "I need to speak to the GM about this", "action": "escalate_to_gm", "escalation": "high"},
+        ],
+        "required_agents": ["kitchen", "front_desk", "gm"],
+        "agent_actions": ["remake_meal", "issue_refund", "safety_review", "gm_call"],
+        "satisfaction_drivers": ["safety", "accountability", "compensation"],
+        "reward_if_happy": "Complimentary dinner tomorrow (chef-prepared, allergen-safe) + €150 credit",
+    },
+    {
+        "id": "damaged_property",
+        "title": "Broken Room Item",
+        "guest_name": "James Wilson",
+        "room": "401",
+        "check_in": "2024-06-23",
+        "check_out": "2024-06-24",
+        "initial_message": "I just noticed the coffee maker is broken and there's a stain on the armchair. I didn't do this—it was like this when I checked in. I'm not paying for damage I didn't cause.",
+        "context": "Coffee maker: electrical issue from previous guest. Chair stain: pre-existing (housekeeping missed it).",
+        "guest_personality": "Defensive, reasonable, wants to avoid blame",
+        "bot_responses": [
+            "Thank you for reporting this. Our inspection missed these items—that's on us, not you.",
+            "We won't charge you for pre-existing damage. Options: (1) Room refund (€50 damage coverage) + apology, (2) Room upgrade tomorrow for free, (3) Both",
+        ],
+        "guest_options": [
+            {"text": "Just refund the damage amount", "action": "issue_refund", "amount": 50},
+            {"text": "Upgrade for tomorrow sounds better", "action": "offer_upgrade", "escalation": "low"},
+            {"text": "I want both", "action": "refund_plus_upgrade", "amount": 50},
+        ],
+        "required_agents": ["housekeeping", "front_desk", "maintenance"],
+        "agent_actions": ["inspect_damage", "issue_refund", "schedule_repairs"],
+        "satisfaction_drivers": ["fairness", "accountability", "speed"],
+        "reward_if_happy": "€30 spa credit + apology gift",
+    },
+    {
+        "id": "wifi_outage",
+        "title": "Internet Connectivity Issue",
+        "guest_name": "Elena Rossi",
+        "room": "503",
+        "check_in": "2024-06-24",
+        "check_out": "2024-06-25",
+        "initial_message": "WiFi is not connecting and I have a critical video call in 30 minutes. I need internet NOW. This is a business trip.",
+        "context": "Room-level WiFi issue (router needs reset). Guest has important client meeting.",
+        "guest_personality": "Professional, urgent, high-stress",
+        "bot_responses": [
+            "I understand the urgency. I'm escalating to IT immediately—ETA 10 minutes.",
+            "We'll have you connected within 5 minutes. Backup: (1) Move to business center (private room with hardline), (2) Hotspot device for room (if needed)",
+        ],
+        "guest_options": [
+            {"text": "Fix it in my room", "action": "fix_in_room", "escalation": "high"},
+            {"text": "Send me to the business center", "action": "business_center", "escalation": "low"},
+            {"text": "How long will this really take?", "action": "get_eta", "escalation": "medium"},
+        ],
+        "required_agents": ["it_support", "front_desk"],
+        "agent_actions": ["dispatch_it", "prepare_business_center", "provide_hotspot"],
+        "satisfaction_drivers": ["speed", "reliability", "problem_solving"],
+        "reward_if_happy": "No charge for WiFi that month + apology",
+    },
+    {
+        "id": "missing_amenities",
+        "title": "Missing Room Supplies",
+        "guest_name": "Kenji Tanaka",
+        "room": "210",
+        "check_in": "2024-06-24",
+        "check_out": "2024-06-25",
+        "initial_message": "I just arrived and there are no towels in the bathroom. Also, no soap or shampoo. This is a 5-star hotel, right? I need these immediately.",
+        "context": "Housekeeping error: supplies not restocked after previous guest. Room is clean but bare.",
+        "guest_personality": "Direct, high standards, slightly sarcastic",
+        "bot_responses": [
+            "My sincere apologies. This is unacceptable for our standard. Housekeeping is bringing everything to you in 5 minutes.",
+            "While we remedy this, I'm offering: (1) Quick delivery + €30 room credit, (2) Upgrade to suite (if available), (3) Both",
+        ],
+        "guest_options": [
+            {"text": "Just bring the supplies", "action": "provide_amenities", "escalation": "low"},
+            {"text": "I want the credit for the inconvenience", "action": "provide_amenities_plus_credit", "amount": 30},
+            {"text": "Can I get upgraded?", "action": "room_upgrade", "escalation": "medium"},
+        ],
+        "required_agents": ["housekeeping", "front_desk"],
+        "agent_actions": ["restock_supplies", "issue_credit", "prepare_suite"],
+        "satisfaction_drivers": ["speed", "compensation", "quality"],
+        "reward_if_happy": "Complimentary toiletry kit to take home",
+    },
+    {
+        "id": "billing_dispute",
+        "title": "Unexpected Charge on Bill",
+        "guest_name": "Andrew McKenzie",
+        "room": "801",
+        "check_in": "2024-06-22",
+        "check_out": "2024-06-24",
+        "initial_message": "I'm checking out and there's a €75 charge on my bill that I didn't authorize. What is this? I didn't order room service or make any calls.",
+        "context": "Charge: mini-fridge restocking (€40) + facility fee (€35). Mini-fridge charge was unauthorized; facility fee should have been disclosed.",
+        "guest_personality": "Suspicious, careful with money, wants transparency",
+        "bot_responses": [
+            "Let me review your charges immediately. I can see the mini-fridge restocking wasn't authorized—that shouldn't be there.",
+            "We'll remove the €40 unauthorized charge. The €35 facility fee is standard, but we should have disclosed it. Options: (1) Remove both (€75), (2) Just remove mini-fridge charge (€40) + €15 apology credit",
+        ],
+        "guest_options": [
+            {"text": "Remove the unauthorized charge only", "action": "remove_charge", "amount": 40},
+            {"text": "Remove both charges", "action": "remove_all_charges", "amount": 75},
+            {"text": "I'll accept the fee if you credit me €15", "action": "partial_resolution", "amount": -15},
+        ],
+        "required_agents": ["front_desk", "accounting"],
+        "agent_actions": ["reverse_charges", "issue_credit", "update_billing"],
+        "satisfaction_drivers": ["transparency", "fairness", "speed"],
+        "reward_if_happy": "€20 credit for next stay",
+    },
+    {
+        "id": "early_departure",
+        "title": "Early Departure Request",
+        "guest_name": "Lisa Bergström",
+        "room": "604",
+        "check_in": "2024-06-23",
+        "check_out": "2024-06-26",
+        "initial_message": "I need to leave tomorrow instead of in 2 days. Family emergency back home. What's your cancellation policy? Can I get a refund?",
+        "context": "Booked 3 nights, paid €450/night (€1,350 total). Non-refundable rate. Early departure on night 2.",
+        "guest_personality": "Distressed, genuine emergency, needs flexibility",
+        "bot_responses": [
+            "I'm sorry to hear about your emergency. Let me help you with this.",
+            "Your rate is non-refundable, but given the circumstances: (1) Full refund for unused nights (€450), (2) Voucher for future stay (€450), (3) Partial refund (€225) + future voucher (€225)",
+        ],
+        "guest_options": [
+            {"text": "Full refund, please", "action": "full_refund", "amount": 450},
+            {"text": "Voucher for later", "action": "future_voucher", "amount": 450},
+            {"text": "Split it", "action": "split_refund", "amount": 225},
+        ],
+        "required_agents": ["front_desk", "accounting"],
+        "agent_actions": ["process_refund", "issue_voucher", "update_booking"],
+        "satisfaction_drivers": ["empathy", "flexibility", "fairness"],
+        "reward_if_happy": "€50 welcome credit for future stay + phone call from GM (personal touch)",
+    },
+]
+
+
+def get_random_scenario():
+    """Return a random scenario"""
+    import random
+    return random.choice(GUEST_SCENARIOS)
+
+
+def get_scenario_by_id(scenario_id):
+    """Get specific scenario by ID"""
+    for scenario in GUEST_SCENARIOS:
+        if scenario["id"] == scenario_id:
+            return scenario
+    return None
