@@ -1,5 +1,5 @@
 """
-Villa Antica Barcelona — Guest Simulator
+Villa Antigua Barcelona — Guest Simulator
 Handles guest communication, bot responses, and agent coordination
 """
 import json
