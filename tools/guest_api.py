@@ -7,7 +7,7 @@ from pydantic import BaseModel
 import sys
 sys.path.insert(0, '/Users/blumet/Library/Application Support/Claude/local-agent-mode-sessions/eb04f6db-8b3d-4c6f-a98c-bf36a535d774/85251725-bb66-488b-935b-34f8bbd6cc3e/local_eafc8cd0-8744-41a6-a38c-1308c89f6795/outputs')
 
-from guest_scenarios import get_random_scenario
+from scenarios.guest_scenarios import get_random_scenario
 from guest_simulator import get_simulator, reset_simulator
 
 router = APIRouter(prefix="/api/guest", tags=["guest"])
